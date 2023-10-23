@@ -1,0 +1,141 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #ff1616;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  text-decoration: none;
+  color: #000;
+  font-size: 360%;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-left: 12%;
+}
+.logo span {
+  color: #ff1616;
+}
+hr {
+  background-color: #000;
+  color: #000;
+  display: block;
+}
+.nav-links {
+  text-align: right;
+  background: #ff1616;
+  padding: 10px 30px;
+  border-bottom-left-radius: 18px;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.left-sidebar {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ff1616;
+}
+.row {
+  padding: 0 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 3%;
+}
+.left-col {
+  flex-basis: 40%;
+}
+.right-col {
+  flex-basis: 55%;
+}
+.left-col img {
+  width: 80%;
+  cursor: pointer;
+  filter: grayscale(0);
+  transition: filter 1s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(250, 0, 0, 0.8) 0px 0 10px;
+  -moz-box-shadow: rgba(255, 0, 0, 0.8) 0 0 10px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 7px;
+  transition: 0.5s;
+}
+.left-col img:hover {
+  filter: grayscale(1);
+  transform: translateY(-5px);
+}
+.right-col h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+.right-col p {
+  font-size: large;
+  margin: 20px 0 150px;
+  font-family: "Lucida Handwriting", cursive;
+}
+.social {
+  display: flex;
+  margin-top: 30px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 1s;
+  box-shadow: 7px 7px 3px crimson;
+}
+.icon img {
+  width: 40px;
+}
+.icon a {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #ff1616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.icon a:hover {
+  opacity: 1;
+}
+.icon:hover {
+  transform: translateY(-5px);
+}
